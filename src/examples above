@@ -1,0 +1,114 @@
+/*
+
+ <div className='container mb-3'>
+    <TextForm heading="Enter and analyze the text below"/>
+    </div>
+function Welcome({personName }){
+  return <h1>{'Welcome to learn react ,${personName}!'}</h1>;
+
+}
+
+function Greeting(){
+  const [message,setMessage]= useState("Hello");
+  return(
+    <div>
+
+      <p>{message},react!</p>
+      <button onClick={()=>setMessage("Hola")}>change THE greeting</button>
+    </div>
+
+  );
+}
+
+function Counter(){
+  let[count,setcount]=useState(0);
+   return(
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={()=>setcount(count+1)}>click me close ur eyes</button>
+    </div>
+   );
+}
+
+className Counter2 extends Component{
+  state={count:0};
+
+  render(){
+    return(
+      <>
+      <h1>Count:{this.state.count}</h1>
+      <button onClick={()=>this.setState((prevState)=>({count:prevState.count+1}))}>Increment</button>
+      <button onClick={()=>this.setState((prevState)=>({count:prevState.count-1}))}>Decrement</button>
+      </>
+    );
+  }
+}
+    
+ 
+ 
+   
+  
+
+
+function Counter1(){
+  let[count1,setcount1]=useState(1);
+  return(<>
+  <p>Count:{count1}</p>
+  <button onClick={()=>setcount1(count1+1)}>sravani button</button>
+  </>)
+  ;
+}
+
+
+
+const books=[{id:1, title:"react magic"},
+  {id:2,title:"javascript easy going"},{
+    id:3,title:"html with css"
+  }
+];
+
+const fruits=["apple","mango","kiwi"];
+const fruitList=fruits.map((fruit,index)=>{return <li key={index}>{fruit}</li>;});
+
+
+const vegetables=["tomato","potato","onion"];
+const veggielist=vegetables.map((vegetable,index)=>{return <li key={index}>{vegetable}</li>;});
+
+
+//const veggielist=vegetables.map((vegetable,index1)=>{return <li key={index1}<{vegetable}</li>;});
+
+const bookItems=books.map((book)=><li key={book.id}>{book.title}</li>);
+
+ReactDOM.render(
+  <ul>
+    {fruitList}
+    {veggielist}
+  </ul>
+)
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+         className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React with sravani
+        </a>
+      </header>
+    </div>
+  );
+  
+}
+
+
+
+*/
+
